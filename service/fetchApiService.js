@@ -20,7 +20,8 @@ const fetchApiService = async() => {
   }).filter((elem) => {
     if(elem !== null) return elem;
   });
-  return searchData;
+  const dataJson = { ...searchData }
+  return dataJson;
 }
 
 module.exports =  { fetchApiService } ;

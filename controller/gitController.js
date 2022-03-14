@@ -4,7 +4,7 @@ const  { fetchApiService  } = require('../service/fetchApiService');
     try {
 
       const fetchApi = await fetchApiService();
-      
+     
       
 
       return res.status(200).json( await fetchApi);
